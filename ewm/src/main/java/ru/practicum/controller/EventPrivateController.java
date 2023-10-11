@@ -64,7 +64,7 @@ public class EventPrivateController {
             @PathVariable long userId,
             @RequestParam(defaultValue = "0") @PositiveOrZero int from,
             @RequestParam(defaultValue = "10") @Positive int size) {
-        log.info("События получить добавленных пользователем с id={} с пагинацией={},{}", userId, from, size);
+        log.info("События получить добавленных пользователем с id={} с пагинацией", userId);
         return service.getAllEventByUserId(userId, from, size);
     }
 

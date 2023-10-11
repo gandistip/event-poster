@@ -15,8 +15,11 @@ import java.util.List;
 public interface EventRepo extends JpaRepository<Event, Long> {
 
     Event findByInitiatorIdAndId(long initiatorId, long eventId);
+
     List<Event> findByInitiatorId(long initiatorId, PageRequest page);
+
     List<Event> findByCategoryId(long categoryId);
+
     List<Event> findByIdIn(List<Long> events);
 
     @Query("SELECT e " +
