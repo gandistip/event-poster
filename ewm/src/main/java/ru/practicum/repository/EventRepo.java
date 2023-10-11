@@ -19,7 +19,7 @@ public interface EventRepo extends JpaRepository<Event, Long> {
     List<Event> findByCategoryId(long categoryId);
     List<Event> findByIdIn(List<Long> events);
 
-    @Query( "SELECT e " +
+    @Query("SELECT e " +
             "FROM Event AS e " +
             "WHERE " +
             "(e.initiator.id IN :#{#f.users} OR :#{#f.users} IS NULL) " +
@@ -28,7 +28,7 @@ public interface EventRepo extends JpaRepository<Event, Long> {
             "AND e.eventDate BETWEEN :#{#f.rangeStart} AND :#{#f.rangeEnd}")
     List<Event> findEventsByAdminFromParam(@Param("f") EventAdminFilter f, PageRequest page);
 
-    @Query( "SELECT e " +
+    @Query("SELECT e " +
             "FROM Event AS e " +
             "WHERE (e.state = 'PUBLISHED') " +
             "AND (:#{#f.text} IS NULL) OR (LOWER(e.annotation) LIKE %:#{#f.text}%) OR (LOWER(e.description) LIKE %:#{#f.text}%) OR (LOWER(e.title) LIKE %:#{#f.text}%) " +

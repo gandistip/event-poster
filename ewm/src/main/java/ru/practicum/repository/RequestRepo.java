@@ -16,7 +16,7 @@ public interface RequestRepo extends JpaRepository<Request, Long> {
     List<Request> findAllByIdInAndStatus(List<Long> requestIds, Status status);
 
     @Modifying
-    @Query( "UPDATE Request AS r " +
+    @Query("UPDATE Request AS r " +
             "SET r.status = :newStatus " +
             "WHERE r.id IN :requestIds AND r.status = :status")
     void updateRequests(List<Long> requestIds, Status newStatus, Status status);
