@@ -1,7 +1,6 @@
 package ru.practicum.model;
 
 import lombok.*;
-import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 

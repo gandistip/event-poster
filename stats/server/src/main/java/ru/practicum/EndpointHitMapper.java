@@ -1,8 +1,5 @@
 package ru.practicum;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class EndpointHitMapper {
 
     public static EndpointHitDto toEndpointHitDto(EndpointHit endpointHit) {

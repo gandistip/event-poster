@@ -1,6 +1,7 @@
 package ru.practicum.dto;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import ru.practicum.model.enums.Status;
 
 import java.util.List;

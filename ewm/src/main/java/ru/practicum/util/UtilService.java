@@ -4,19 +4,13 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import ru.practicum.exception.ValidationExc;
+import ru.practicum.exception.NotFoundExc;
 import ru.practicum.model.*;
-import ru.practicum.model.enums.State;
-import ru.practicum.repository.empty.CategoryRepo;
 import ru.practicum.repository.CompilationRepo;
 import ru.practicum.repository.EventRepo;
-import ru.practicum.exception.NotFoundExc;
 import ru.practicum.repository.RequestRepo;
 import ru.practicum.repository.UserRepo;
-
-import java.time.LocalDateTime;
-
-import static ru.practicum.util.UtilConstant.FORMATTER;
+import ru.practicum.repository.empty.CategoryRepo;
 
 @Service
 @RequiredArgsConstructor

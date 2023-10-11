@@ -1,10 +1,9 @@
 package ru.practicum.service.interf;
 
-import org.springframework.data.domain.PageRequest;
-import ru.practicum.dto.*;
+import ru.practicum.dto.EventFullDto;
+import ru.practicum.dto.EventShortDto;
 import ru.practicum.model.filters.EventPublicFilter;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 public interface EventPublicService {

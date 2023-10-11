@@ -4,19 +4,18 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.practicum.dto.*;
+import ru.practicum.exception.ConflictExc;
 import ru.practicum.exception.ValidationExc;
 import ru.practicum.mapper.EventMapper;
+import ru.practicum.mapper.RequestMapper;
 import ru.practicum.model.*;
 import ru.practicum.model.enums.Status;
-import ru.practicum.repository.empty.LocationRepo;
-import ru.practicum.exception.ConflictExc;
-import ru.practicum.mapper.RequestMapper;
 import ru.practicum.repository.EventRepo;
 import ru.practicum.repository.RequestRepo;
+import ru.practicum.repository.empty.LocationRepo;
 import ru.practicum.util.UtilService;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 

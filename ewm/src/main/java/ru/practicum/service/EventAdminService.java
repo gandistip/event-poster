@@ -1,17 +1,14 @@
 package ru.practicum.service;
 
 import lombok.AllArgsConstructor;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.practicum.dto.EventFullDto;
 import ru.practicum.dto.EventUpdateDto;
 import ru.practicum.exception.ConflictExc;
-import ru.practicum.exception.ValidationExc;
 import ru.practicum.mapper.EventMapper;
 import ru.practicum.model.Category;
 import ru.practicum.model.Event;
-import ru.practicum.model.enums.State;
 import ru.practicum.model.enums.StateAction;
 import ru.practicum.model.filters.EventAdminFilter;
 import ru.practicum.repository.EventRepo;
@@ -19,7 +16,6 @@ import ru.practicum.repository.empty.LocationRepo;
 import ru.practicum.util.UtilService;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import static ru.practicum.model.enums.State.*;

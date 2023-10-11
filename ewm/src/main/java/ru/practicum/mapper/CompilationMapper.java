@@ -3,13 +3,9 @@ package ru.practicum.mapper;
 import lombok.experimental.UtilityClass;
 import ru.practicum.dto.CompilationDto;
 import ru.practicum.dto.CompilationNewDto;
-import ru.practicum.dto.CompilationUpdateDto;
 import ru.practicum.model.Compilation;
-import ru.practicum.model.Event;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -1,14 +1,13 @@
 package ru.practicum.service;
 
 import lombok.AllArgsConstructor;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.practicum.dto.CategoryDto;
-import ru.practicum.repository.EventRepo;
 import ru.practicum.exception.ConflictExc;
 import ru.practicum.mapper.CategoryMapper;
 import ru.practicum.model.Category;
+import ru.practicum.repository.EventRepo;
 import ru.practicum.repository.empty.CategoryRepo;
 import ru.practicum.util.UtilService;
 

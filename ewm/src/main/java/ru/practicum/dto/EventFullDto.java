@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
-import ru.practicum.model.enums.State;
 import ru.practicum.model.Location;
+import ru.practicum.model.enums.State;
 
 import java.time.LocalDateTime;
 

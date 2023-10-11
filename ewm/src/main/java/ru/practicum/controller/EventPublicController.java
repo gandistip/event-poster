@@ -2,16 +2,13 @@ package ru.practicum.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.practicum.model.filters.EventAdminFilter;
-import ru.practicum.model.filters.EventPublicFilter;
-import ru.practicum.service.interf.EventPublicService;
 import ru.practicum.dto.EventFullDto;
 import ru.practicum.dto.EventShortDto;
-import ru.practicum.util.UtilService;
+import ru.practicum.model.filters.EventPublicFilter;
+import ru.practicum.service.interf.EventPublicService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.Positive;

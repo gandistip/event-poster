@@ -4,11 +4,13 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.practicum.dto.RequestDto;
-import ru.practicum.model.*;
 import ru.practicum.exception.ConflictExc;
 import ru.practicum.mapper.RequestMapper;
-import ru.practicum.model.enums.Status;
+import ru.practicum.model.Event;
+import ru.practicum.model.Request;
+import ru.practicum.model.User;
 import ru.practicum.model.enums.State;
+import ru.practicum.model.enums.Status;
 import ru.practicum.repository.RequestRepo;
 import ru.practicum.util.UtilService;
 

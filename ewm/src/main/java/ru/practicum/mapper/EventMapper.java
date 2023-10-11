@@ -1,20 +1,20 @@
 package ru.practicum.mapper;
 
 import lombok.experimental.UtilityClass;
-import ru.practicum.dto.EventUpdateDto;
-import ru.practicum.model.*;
 import ru.practicum.dto.EventFullDto;
 import ru.practicum.dto.EventNewDto;
 import ru.practicum.dto.EventShortDto;
-import ru.practicum.model.enums.State;
-import ru.practicum.model.enums.StateAction;
+import ru.practicum.dto.EventUpdateDto;
+import ru.practicum.model.Category;
+import ru.practicum.model.Event;
+import ru.practicum.model.Location;
+import ru.practicum.model.User;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static ru.practicum.model.enums.State.*;
-import static ru.practicum.model.enums.StateAction.*;
+import static ru.practicum.model.enums.State.PENDING;
 
 @UtilityClass
 public class EventMapper {
