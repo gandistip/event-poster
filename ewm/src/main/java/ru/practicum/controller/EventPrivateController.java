@@ -64,7 +64,7 @@ public class EventPrivateController {
             @PathVariable long userId,
             @RequestParam(defaultValue = "0") @PositiveOrZero int from,
             @RequestParam(defaultValue = "10") @Positive int size) {
-        log.info("События получить добавленных пользователем с id={} с пагинацией={}/{}", userId, from, size);
+        log.info("События получить добавленных пользователем с id={} с пагинацией={},{}", userId, from, size);
         return service.getAllEventByUserId(userId, from, size);
     }
 
@@ -76,5 +76,4 @@ public class EventPrivateController {
         log.info("Запросы на участие в событии получить с id={} пользователя с id={}", eventId, userId);
         return service.getRequestsForEventAndUser(userId, eventId);
     }
-
 }
