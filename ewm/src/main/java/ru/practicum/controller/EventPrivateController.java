@@ -19,6 +19,7 @@ import java.util.List;
 public class EventPrivateController {
 
     private final EventPrivateService service;
+
     @PostMapping
     @ResponseStatus(value = HttpStatus.CREATED)
     public EventFullDto addEvent(

@@ -24,7 +24,7 @@ import static ru.practicum.util.UtilConstant.DATE_FORMAT;
 @Slf4j
 public class EventPublicController {
 
-    public final EventPublicService service;
+    private final EventPublicService service;
 
     @GetMapping("/{id}")
     @ResponseStatus(value = HttpStatus.OK)
