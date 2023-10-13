@@ -56,6 +56,7 @@ public class EventAdminService {
         if (dto.getCategory() != null) {
             category = utilService.getCategoryIfExist(dto.getCategory());
         }
+
         Event updatedEvent = EventMapper.toEventUpdate(event, dto, category);
         locationRepo.save(updatedEvent.getLocation());
         eventRepo.save(updatedEvent);

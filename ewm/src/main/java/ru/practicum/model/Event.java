@@ -31,40 +31,40 @@ public class Event {
     @JoinColumn(name = "location_id")
     Location location;
 
-    @Column(name = "title")
+    @Column
     String title;
 
-    @Column(name = "annotation")
+    @Column
     String annotation;          // Краткое описание события
 
-    @Column(name = "event_date")
+    @Column
     LocalDateTime eventDate;
 
-    @Column(name = "paid")
+    @Column
     Boolean paid;               // Платность события (true - платное)
 
-    @Column(name = "description")
+    @Column
     String description;
 
-    @JoinColumn(name = "confirmed_requests")
+    @JoinColumn
     Long confirmedRequests;     // Количество одобренных заявок на участие в данном событии
 
-    @Column(name = "participant_limit")
+    @Column
     Long participantLimit;      // Ограничение на количество участников (0 - без ограничений)
 
-    @Column(name = "request_moderation")
+    @Column
     Boolean requestModeration;  // Пре-модерация заявок на участие (true - требуется)
 
-    @Column(name = "published_on")
+    @Column
     LocalDateTime publishedOn;
 
-    @Column(name = "created_on")
+    @Column
     LocalDateTime createdOn;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "event_state")
+    @Column
     State state;
 
-    @Column(name = "views")
+    @Column
     Long views;
 }
