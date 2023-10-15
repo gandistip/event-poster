@@ -1,36 +1,41 @@
 package ru.practicum.model;
 
 import lombok.*;
-import ru.practicum.model.enums.Status;
+import ru.practicum.model.enums.CommentStatus;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "requests")
+@Table(name = "comments")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Request {
+public class Comment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     @ManyToOne
+    @JoinColumn(name = "user_id")
+    User user;
+
+    @ManyToOne
     @JoinColumn(name = "event_id")
     Event event;
 
-    @ManyToOne
-    @JoinColumn(name = "requester_id")
-    User requester;
+    @Size(min = 10, max = 100)
+    @Column
+    String text;
 
     @Column
-    LocalDateTime created;
+    LocalDateTime createdTime;
 
-    @Column(name = "request_status")
+    @Column
     @Enumerated(EnumType.STRING)
-    Status status;
+    CommentStatus status;
 }

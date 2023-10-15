@@ -109,7 +109,6 @@ public class EventPrivateService {
             requestsReport.setRejectedRequests(RequestMapper.toRequestDtoList(
                     requestRepo.findAllByIdInAndStatus(rejected, Status.REJECTED)));
         }
-
         if (request.getStatus().equals(CONFIRMED)) {
             List<Long> confirmed = request.getRequestIds();
             requestRepo.updateRequests(confirmed, CONFIRMED, Status.PENDING);
