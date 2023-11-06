@@ -1,4 +1,4 @@
-# Веб-сервис Афиша мероприятий на Java Spring Boot
+# Афиша мероприятий - веб-сервис на Java Spring Boot
 Стек - Java, Spring Boot, PostgreSQL, Hibernate ORM, Maven, Lombok, Docker, REST API.
 
 ## О проекте
