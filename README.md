@@ -1,5 +1,5 @@
-# Event Poster - веб-сервис Афиша мероприятий
-Java, Spring Boot, PostgreSQL, JPA, Hibernate ORM, Maven, Lombok, Docker, REST API.
+# Веб-сервис Афиша мероприятий на Java Spring Boot
+Стек - Java, Spring Boot, PostgreSQL, JPA, Hibernate ORM, Maven, Lombok, Docker, REST API.
 
 ## О проекте
 Пользователи предлагают мероприятия, могут искать мероприятия по параметрам или формируя подборки и подают заявки на участие мероприятиях.
